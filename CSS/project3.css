@@ -1301,7 +1301,7 @@ a {
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom);
   position: relative;
-  background-image: url(/Project3/images/stats.jpg);
+  background-image: url(../imgs/stats.jpg);
   background-size: cover;
   min-height: 300px
 }
@@ -1384,7 +1384,7 @@ a {
   padding-bottom: 50px
 }
 .discount .image {
-  background-image: url(/Project3/images/discount-background1.jpg);
+  background-image: url(../imgs/discount-background1.jpg);
   background-size: cover;
   flex-basis: 50%;
   display: flex;
@@ -1690,10 +1690,10 @@ a {
 }
 @keyframes change {
   0%, 100% {
-    background-image: url(/Project3/images/discount-background1.jpg)
+    background-image: url(../imgs/discount-background1.jpg)
   }
   50% {
-    background-image: url(/Project3/images/discount-background2.jpg)
+    background-image: url(../imgs/discount-background2.jpg)
   }
 }
 /* End Animation */
