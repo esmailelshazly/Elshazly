@@ -113,7 +113,7 @@ a {
   z-index: 1
 }
 .dots {
-  background-image: url(/Project3/images/dots.png);
+  background-image: url(../imgs/dots.png);
   background-repeat: no-repeat;
   width: 186px;
   height: 204px;
