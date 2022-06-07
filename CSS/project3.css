@@ -860,9 +860,6 @@ a {
   padding-bottom: var(--padding-bottom);
   position: relative;
 }
-.skills .container {
-  
-}
 .skills .skill {
   padding: 20px 0;
   font-weight: 600;
@@ -877,6 +874,7 @@ a {
   background-color: var(--main-color);
   height: 100%;
   display: block;
+  transition: 0.5s
 }
 .skills span::before {
   content: attr(data-prog);
