@@ -1,17 +1,17 @@
 let other = document.querySelector(".other");
 let mega = document.querySelector(".mega-menu");
 let skills = document.querySelector(".skills");
-let prog = document.querySelectorAll(".prog span");
+let prog = document.querySelectorAll(".skills span");
 other.addEventListener("click", function() {
   mega.classList.toggle("show");
 });
-window.onscroll = function () {
+window.addEventListener("scroll", function() {
   if (window.scrollY >= skills.offsetTop + 30) {
     prog.forEach(function(spans) {
       spans.style.width = spans.dataset.prog;
     });
   };
-};
+})
 let dateCount = new Date("Dec 31, 2022 23:59:59").getTime();
 let counter = setInterval(function() {
   let dateNow = new Date().getTime();
@@ -31,7 +31,7 @@ let counter = setInterval(function() {
 let counterStats = document.querySelector(".stats");
 let countersSpans = document.querySelectorAll(".stats span");
 let starting = false;
-window.onscroll = function() {
+window.addEventListener("scroll", function() {
   if (window.scrollY >= counterStats.offsetTop - 20) {
     if (!starting) {
       countersSpans.forEach(function startCount(el) {
@@ -46,4 +46,4 @@ window.onscroll = function() {
     };
     starting = true;
   };
-}
+})
