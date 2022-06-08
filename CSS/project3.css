@@ -1625,6 +1625,57 @@ a {
   }
 }
 /* End Footer */
+.scroll-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background-color: #0075ff;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 200;
+}
+.scroll-top span:first-child {
+  background-color: white;
+  position: absolute;
+  top: 41%;
+  right: 5.2px;
+  width: 13px;
+  height: 2px;
+  transform: rotate(53deg);
+  border-top-left-radius: 1px;
+}
+.scroll-top span:last-child {
+  background-color: white;
+  position: absolute;
+  top: 41%;
+  left: 5.2px;
+  width: 13px;
+  height: 2px;
+  transform: rotate(-53deg);
+  border-top-right-radius: 1px
+}
+.scroll-top.scroll {
+  opacity: 1;
+}
+.scroll-top::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #0000001C;
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.scroll-top:hover::before {
+  width: 100%
+}
 /* Start Animation */
 @keyframes up-and-down {
   0%,
