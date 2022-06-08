@@ -47,3 +47,18 @@ window.addEventListener("scroll", function() {
     starting = true;
   };
 })
+let scrollTop = document.querySelector(".scroll-top")
+window.addEventListener("scroll", function() {
+  if (window.scrollY >= 100) {
+    scrollTop.classList.add("scroll");
+  } else {
+    scrollTop.classList.remove("scroll")
+  }
+});
+scrollTop.onclick = function() {
+  window.scrollTo({
+    left: 0,
+    top: 0,
+    behavior: "smooth"
+  });
+}
